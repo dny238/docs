@@ -15,16 +15,17 @@ Configure & Compile to WiTi
 ------
 When you download the source code of witi-openwrt, you should configure to compile openwrt. 
 Let's begin!
-* Update & install software packages
+
+* Update & install software packages<br> 
 We should update some packages form other repositories, and install it.
 
             ./scripts/feeds update -a
             ./scripts/feeds install -a
 
-* Configure
+* Configure<br>
 First, select correct target profile. As follows:
 
-            make menuconfig
+            $ make menuconfig
             
             #Select Target system
             Target System (MTK/Ralink APSOC) --->
@@ -44,7 +45,7 @@ First, select correct target profile. As follows:
                   .....
                   [ * ] squashfs --->
 
-* Compile 
+* Compile<br>
 Now, we have completed minimum configuration. Next you can compile WiTi source code.
 If you want to show the process of compilationk, user V=s.
 
@@ -59,10 +60,10 @@ Download image to WiTi Board
 Until then, it will generate an image for WiTi Board at "bin/ramips/" directory. 
 Find it, and copy it to your tftp server directory.For example:
 
-            cd bin/ramips/
-            ls
-            openwrt-ramips-mt7621-witi-squashfs-sysupgrade.bin   openwrt-ramips-mt7621-witi-initramfs-uImage.bin
-            cp openwrt-ramips-mt7621-witi-initramfs-uImage.bin /tftpboot/ -vfr
+            $ cd bin/ramips/
+            $ ls
+            $ openwrt-ramips-mt7621-witi-squashfs-sysupgrade.bin   openwrt-ramips-mt7621-witi-initramfs-uImage.bin
+            $ cp openwrt-ramips-mt7621-witi-squashfs-sysupgrade.bin /tftpboot/ -vfr
 Before download imge to the WiTi Board, you should configure your serial parameters.
 If not, minicom can not receive log correctly. As that:
 
