@@ -8,8 +8,8 @@ you have installed follows software.
 
 Get source code
 ------
-      git clone https://github.com/mqmaker/witi-openwrt.git
-      git clone https://github.com/mqmaker/witi-uboot.git
+      git clone --depth=1 https://github.com/mqmaker/witi-openwrt.git
+      git clone --depth=1 https://github.com/mqmaker/witi-uboot.git
 
 Configure & Compile to WiTi
 ------
