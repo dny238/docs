@@ -48,9 +48,28 @@ If you want to show the process of compilationk, user V=s.
 or
 
             make -j 4
-Ok,  enjoy a cup of tea, wait it complete. ^_^
+OK,  enjoy a cup of tea, wait it complete. ^_^
 
-Using Gccgo
+Using gccgo cross compiler
 ------
-TODO
+* Set enviroment variable
 
+            cd staging_dir (In your clone of witi-openwrt repo)
+            export STAGING_DIR=$(pwd)
+            
+* At anywhere, create a `helloworld.go`
+
+      ```go
+      package main
+      import "fmt"
+      
+      func main() {
+      	fmt.Println("Hello, World")
+      }
+      ```
+* Compile your go program
+
+            path/to/mipsel-openwrt-linux-gccgo helloworld.go -o hello -static-libgo
+
+
+Now we done, Have fun!
