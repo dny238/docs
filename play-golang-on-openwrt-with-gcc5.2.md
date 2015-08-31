@@ -1,4 +1,4 @@
-Prepare
+Preparation
 ------
 You need to install Linux OS. We suggest to install Ubuntu 14.04. And ensure that
 you have installed follows software.
