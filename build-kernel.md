@@ -68,4 +68,4 @@ mkimage \
 -n "Linux-3.10.14" \
 -d vmlinux.lzma uImage
 ```
-If everything goes okay, Your new kernel names `uImage` is ready to use.
+If everything goes fine, then your new kernel names `uImage` is ready to use.
