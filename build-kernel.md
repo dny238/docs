@@ -1,4 +1,4 @@
-Linux Kernel Build Guide (WiTi)
+Linux Kernel Build Guide (For WiTi Board)
 ----
 If you want build & upgrade your kernel only. Here is the tutorial shows you how to do it.
 
