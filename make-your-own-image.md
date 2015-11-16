@@ -64,7 +64,8 @@ Find it, and copy it to your tftp server directory.For example:
             $ ls
             $ openwrt-ramips-mt7621-witi-squashfs-sysupgrade.bin   openwrt-ramips-mt7621-witi-initramfs-uImage.bin
             $ cp openwrt-ramips-mt7621-witi-squashfs-sysupgrade.bin /tftpboot/ -vfr
-Before download imge to the WiTi Board, you should configure your serial parameters.
+Connect your serial. [How to connect serial/UART, here.](https://forum.mqmaker.com/t/how-to-connect-usb-to-serial-uart/140)
+Before download imge to the WiTi Board, you should configure your serial parameters. 
 If not, minicom can not receive log correctly. As that:
 
             Speed:   57600
