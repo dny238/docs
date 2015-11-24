@@ -33,7 +33,7 @@ make ARCH="mips" menuconfig
 ```
 
 * Compile the kernel
-```shell
+```
 export PATH=/opt/mips-2012.03/bin/:$PATH
 
 rm -vf uImage*
